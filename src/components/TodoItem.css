@@ -16,3 +16,15 @@
 .todoItem--done {
     text-decoration: line-through;
 }
+
+.todoItem > button {
+    width: 18%;
+    background-color: rgb(214, 213, 213);
+    border: none;
+    border-radius: 10px;
+    margin: 6px 4px;
+}
+
+.todoItem > button:hover {
+    background-color: rgb(189, 183, 183);
+}

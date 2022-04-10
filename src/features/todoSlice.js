@@ -24,11 +24,16 @@ const todoSlice = createSlice({
                   }
                 }
             })
+        },
+        
+        setRemove: (state, action) => {
+            const index = state.todoList.findIndex((todo) => todo === action.payload);
+            state.todoList.splice(index, 1);
         }
     }
 });
 
-export const { saveTodo, setCheck } = todoSlice.actions
+export const { saveTodo, setCheck, setRemove } = todoSlice.actions
 
 export const selectTodoList = state => state.todos.todoList
 

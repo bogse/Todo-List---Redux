@@ -8,8 +8,8 @@
 }
 
 .app__container {
-    min-height: 700px;  
-    min-width: 500px;   
+    height: 700px;  
+    width: 500px;   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,4 +24,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
 }
